@@ -154,7 +154,7 @@ export default function ChecklistSection({
 
       {/* Expanded content */}
       {isExpanded && (
-        <div className="px-5 pb-5 border-t border-metal/10">
+        <div className="px-5 pb-5 border-t border-metal/10 break-words">
           <p className="text-sm text-galactic mt-4 mb-2">{page.description}</p>
 
           {page.regulations && page.regulations.length > 0 && (

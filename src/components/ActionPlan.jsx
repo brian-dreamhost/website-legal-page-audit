@@ -116,7 +116,7 @@ export default function ActionPlan({ actions, onCopy, onExport }) {
 
   return (
     <section className="mt-6 animate-fadeIn" aria-label="Action plan">
-      <div className="card-gradient rounded-2xl border border-metal/20 overflow-hidden">
+      <div className="card-gradient rounded-2xl border border-metal/20 overflow-hidden overflow-x-hidden">
         {/* Header */}
         <div className="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <button
@@ -202,7 +202,7 @@ export default function ActionPlan({ actions, onCopy, onExport }) {
                           role="listitem"
                         >
                           <ActionTypeIcon type={action.type} />
-                          <div className="flex-1 min-w-0">
+                          <div className="flex-1 min-w-0 break-words">
                             <div className="flex items-center gap-2 flex-wrap mb-1">
                               <span className="text-sm font-medium text-white">{action.description}</span>
                               <PriorityBadge priority={action.priority} />

@@ -95,7 +95,7 @@ export default function ScoreDashboard({ scoreData, hasStarted }) {
     <div className="card-gradient rounded-2xl border border-metal/20 p-6 mb-8 animate-fadeIn">
       <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
         <CircularGauge score={metrics.score} />
-        <div className="flex-1 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center md:text-left">
+        <div className="flex-1 min-w-0 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center md:text-left">
           <div>
             <p className="text-2xl font-bold text-turtle">{metrics.presentCount}</p>
             <p className="text-xs text-galactic mt-0.5">Present</p>
